@@ -1,15 +1,5 @@
 name = "dirac-monopole-watch"
 compatibility_date = "2024-09-23"
 
-[site]
-bucket = "./out"
-
-# To deploy:
-#   1. npm run build        — produces the ./out directory
-#   2. npx wrangler deploy  — uploads assets to KV and deploys the Worker
-#
-# Or, for a simpler zero-config deploy, use Cloudflare Pages instead:
-#   npx wrangler pages deploy out --project-name dirac-monopole-watch
-#
-# Cloudflare Pages handles _next/static/ asset routing natively without
-# needing this wrangler.toml or the _worker.js script.
+[assets]
+directory = "./out"
