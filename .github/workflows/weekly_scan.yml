@@ -1,0 +1,22 @@
+name: Weekly arXiv scan
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 2 * * 2"
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python collector/arxiv_collector.py
+      - name: Commit collected records
+        run: |
+          git config user.name "dirac-monopole-watch[bot]"
+          git config user.email "dirac-monopole-watch[bot]@users.noreply.github.com"
+          git add data/papers data/collector-state.json
+          git diff --cached --quiet || git commit -m "data: weekly arXiv scan"
+          git push

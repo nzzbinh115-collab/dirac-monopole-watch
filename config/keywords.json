@@ -1,0 +1,5 @@
+{
+  "core": ["Dirac monopole", "magnetic monopole", "magnetic charge", "Dirac quantization", "Dirac string", "magnetic charge quantization", "monopole harmonics"],
+  "gauge_and_geometry": ["Wu–Yang", "Wu-Yang", "gauge patch", "U(1) bundle", "first Chern class", "magnetic flux quantization", "gauge connection"],
+  "field_theory_and_symmetries": ["monopole production", "Schwinger pair production", "magnetic one-form symmetry", "generalized global symmetry", "Dirac veto"]
+}

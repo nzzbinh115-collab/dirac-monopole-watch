@@ -1,0 +1,9 @@
+{
+  "arxiv_categories": ["hep-th", "hep-ex", "math-ph"],
+  "overlap_days": 14,
+  "page_size": 100,
+  "request_delay_seconds": 3,
+  "weekly_schedule": "Tuesday 09:17 Asia/Ho_Chi_Minh",
+  "event_polling_interval_hours": 6,
+  "ai_summary": { "enabled": false, "provider": null }
+}

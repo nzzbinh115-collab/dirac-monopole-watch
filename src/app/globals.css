@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root { --background: #f5f1e8; --foreground: #102838; }
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-tap-highlight-color: rgba(200, 134, 66, 0.22); }
+body { background: var(--background); color: var(--foreground); font-family: "IBM Plex Sans", "Segoe UI", Arial, sans-serif; }
+.font-serif { font-family: Newsreader, Georgia, "Times New Roman", serif; }
+::selection { background: #bfe9e4; color: #07131d; }
+a { text-underline-offset: 0.18em; }
+.field-line { stroke-dasharray: 7 11; transform-box: fill-box; transform-origin: center; animation: drift 6s ease-in-out infinite alternate; }
+@keyframes drift { from { transform: translateX(-3px); } to { transform: translateX(3px); } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .field-line { animation: none; } }

@@ -1,0 +1,1 @@
+Collector output is stored here as JSON records. New arXiv records must begin with `relevance: PENDING_REVIEW`, `editorialVerification: PENDING_REVIEW`, and no AI summary unless a model is explicitly configured.
