@@ -10,7 +10,7 @@ Khoảng dữ kiện: 24/10 – 21/11/2026 (lượt quét arXiv đầu tiên)
 
 ## Thực nghiệm
 
-Không có bài tìm kiếm thực nghiệm hay giới hạn loại trừ mới nào về monopole trong cửa sổ quét này. Các kết quả thực nghiệm mới nhất trong thư viện vẫn là của MoEDAL trên toàn bộ detector bẫy Run 2 (2025) và MoEDAL-MAPP trong va chạm PbPb (2024). Kết quả Run 3 đầu tiên của MoEDAL vẫn chưa xuất hiện và tiếp tục là mục theo dõi quan trọng nhất.
+Không có bài tìm kiếm thực nghiệm hay giới hạn loại trừ mới nào về monopole trong cửa sổ quét này. Các kết quả thực nghiệm mới nhất trong thư viện vẫn là của MoEDAL trên toàn bộ detector bẫy Run 2 (2025) và tìm kiếm MoEDAL trong ống chùm CMS từ va chạm PbPb (2024). Kết quả Run 3 đầu tiên của MoEDAL vẫn chưa xuất hiện và tiếp tục là mục theo dõi quan trọng nhất.
 
 ## Lý thuyết
 
@@ -30,7 +30,7 @@ Geng & Wang, Fermion-Monopole Scattering: A Unified Perspective (arXiv:2611.0700
 
 ## Minh bạch phân loại
 
-Ba quyết định ở vùng biên được ghi rõ để người đọc tự cân lại. Một: các bài tán xạ fermion lên monopole BPS hay monopole SU(5) (Khoze; Geng & Wang) được tính DIRECT vì bài toán tán xạ và hiệu ứng Callan–Rubakov chính là bài toán của monopole Dirac, dù vật mang từ tích trong các bài đó là monopole trơn; giới hạn này được ghi ngay trên thẻ bài. Hai: mô phỏng tương tự trên máy tính lượng tử (O'Brien và cộng sự) được tính RELATED với mức bằng chứng SIMULATION, không phải DIRECT. Ba: bài tổng quan về superinsulation (Diamantini & Trugenberger) bị loại vì monopole trong đó là kích thích hiệu dụng trong vật liệu, đúng điều khoản loại mặc định của skill; các bài về dyon Julia-Zee, monopole GUT trong vũ trụ học và monopole trên mạng tinh thể cũng bị loại vì là đối tượng khác.
+Ba quyết định ở vùng biên được ghi rõ để người đọc tự cân lại. Một: các bài tán xạ fermion lên monopole BPS hay monopole SU(5) (Khoze; Geng & Wang) được tính DIRECT vì bài toán tán xạ và hiệu ứng Callan–Rubakov chính là bài toán của monopole Dirac, dù vật mang từ tích trong các bài đó là monopole trơn; giới hạn này được ghi ngay trên thẻ bài. Hai: mô phỏng tương tự trên máy tính lượng tử (O'Brien và cộng sự) được tính RELATED với mức bằng chứng SIMULATION, không phải DIRECT. Ba: bài tổng quan về superinsulation (Diamantini & Trugenberger) bị loại vì monopole trong đó là kích thích hiệu dụng trong vật liệu, đúng điều khoản loại mặc định của skill; các bài về dyon Julia-Zee, monopole GUT trong vũ trụ học và monopole trên mạng tinh thể cũng bị loại vì là đối tượng khác. Đính chính ngày 21/11: một đợt rà soát toàn bộ thư viện theo bản ghi gốc trên arXiv phát hiện hai mục cũ từ dữ liệu mẫu không tồn tại trong bất kỳ chỉ mục nào (một bài gán cho Brennan & Cordova, một bài MoEDAL-MAPP về PbPb) nên đã gỡ khỏi thư viện; tác giả, DOI, liên kết và ngày tháng của các mục còn lại từ dữ liệu mẫu cũng đã được sửa theo bản ghi gốc.
 
 ## Theo dõi tiếp
 
