@@ -18,7 +18,7 @@ Bốn bài cùng đánh vào một câu hỏi: fermion tán xạ lên monopole t
 
 ## Vật lý toán
 
-Bykov và Krivorol nối mạch monopole harmonics lên phổ của toán tử Laplace trên Grassmannian với trường monopole nền. Marmo, Sardón và Zhao dùng hệ điện tích–monopole làm ví dụ dẫn đường cho hình học q-contact và chứng minh một cản trở tô pô ở trường hợp hai monopole. Del Zotto và Saxena cho thấy đối xứng 1-form từ của QED — ngôn ngữ hiện đại của điều kiện Dirac — bị xoắn bởi cấu trúc không spin của đa tạp. Zhou xét điều kiện để điện tích từ tồn tại tại một tâm đều trong điện động lực học ghép với độ cong.
+Bykov và Krivorol nối mạch monopole harmonics lên phổ của toán tử Laplace trên Grassmannian với trường monopole nền. Marmo, Sardón và Zhao dùng hệ điện tích–monopole làm ví dụ dẫn đường cho hình học q-contact và chứng minh một cản trở tô pô ở trường hợp hai monopole. Del Zotto và Saxena cho thấy đối xứng 1-form từ của QED — ngôn ngữ hiện đại của điều kiện Dirac — bị xoắn bởi cấu trúc không spin của đa tạp. Zhou xét điều kiện để từ tích tồn tại tại một tâm đều trong điện động lực học ghép với độ cong.
 
 ## Bài đáng đọc
 
@@ -30,7 +30,7 @@ Geng & Wang, Fermion-Monopole Scattering: A Unified Perspective (arXiv:2611.0700
 
 ## Minh bạch phân loại
 
-Ba quyết định ở vùng biên được ghi rõ để người đọc tự cân lại. Một: các bài tán xạ fermion lên monopole BPS hay monopole SU(5) (Khoze; Geng & Wang) được tính DIRECT vì bài toán tán xạ và hiệu ứng Callan–Rubakov chính là bài toán của monopole Dirac, dù vật mang điện tích từ trong các bài đó là monopole trơn; giới hạn này được ghi ngay trên thẻ bài. Hai: mô phỏng tương tự trên máy tính lượng tử (O'Brien và cộng sự) được tính RELATED với mức bằng chứng SIMULATION, không phải DIRECT. Ba: bài tổng quan về superinsulation (Diamantini & Trugenberger) bị loại vì monopole trong đó là kích thích hiệu dụng trong vật liệu, đúng điều khoản loại mặc định của skill; các bài về dyon Julia-Zee, monopole GUT trong vũ trụ học và monopole trên mạng tinh thể cũng bị loại vì là đối tượng khác.
+Ba quyết định ở vùng biên được ghi rõ để người đọc tự cân lại. Một: các bài tán xạ fermion lên monopole BPS hay monopole SU(5) (Khoze; Geng & Wang) được tính DIRECT vì bài toán tán xạ và hiệu ứng Callan–Rubakov chính là bài toán của monopole Dirac, dù vật mang từ tích trong các bài đó là monopole trơn; giới hạn này được ghi ngay trên thẻ bài. Hai: mô phỏng tương tự trên máy tính lượng tử (O'Brien và cộng sự) được tính RELATED với mức bằng chứng SIMULATION, không phải DIRECT. Ba: bài tổng quan về superinsulation (Diamantini & Trugenberger) bị loại vì monopole trong đó là kích thích hiệu dụng trong vật liệu, đúng điều khoản loại mặc định của skill; các bài về dyon Julia-Zee, monopole GUT trong vũ trụ học và monopole trên mạng tinh thể cũng bị loại vì là đối tượng khác.
 
 ## Theo dõi tiếp
 
