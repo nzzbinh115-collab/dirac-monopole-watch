@@ -7,12 +7,22 @@ and never advances the success timestamp when a request or parse fails.
 from __future__ import annotations
 
 import json
+import ssl
 import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
+
+try:
+    import certifi
+    SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
+except Exception:
+    try:
+        SSL_CONTEXT = ssl.create_default_context()
+    except Exception:
+        SSL_CONTEXT = None
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = json.loads((ROOT / "config" / "settings.json").read_text(encoding="utf-8"))
@@ -31,11 +41,11 @@ def request_feed(category: str, start: int) -> bytes:
     query = urllib.parse.urlencode({"search_query": f"cat:{category}", "sortBy": "submittedDate", "sortOrder": "descending", "start": start, "max_results": CONFIG["page_size"]})
     url = f"https://export.arxiv.org/api/query?{query}"
     request = urllib.request.Request(url, headers={"User-Agent": "DiracMonopoleWatch/0.1 (personal research tracker)"})
-    with urllib.request.urlopen(request, timeout=45) as response:
+    with urllib.request.urlopen(request, timeout=45, context=SSL_CONTEXT) as response:
         return response.read()
 
-def text(entry: ET.Element, tag: str) -> str:
-    return " ".join((entry.findtext(f"{{{ATOM}}}{tag}") or "").split())
+def text(entry: ET.Element, tag: str, ns: str = ATOM) -> str:
+    return " ".join((entry.findtext(f"{{{ns}}}{tag}") or "").split())
 
 def record(entry: ET.Element, category: str) -> dict:
     raw_id = text(entry, "id").rsplit("/", 1)[-1]
@@ -44,7 +54,7 @@ def record(entry: ET.Element, category: str) -> dict:
     return {
         "arxiv_id": arxiv_id, "arxiv_version": raw_id, "title": text(entry, "title"), "authors": [text(author, "name") for author in entry.findall(f"{{{ATOM}}}author")], "abstract": text(entry, "summary"),
         "primary_category": (entry.find(f"{{{ARXIV}}}primary_category").attrib.get("term", category) if entry.find(f"{{{ARXIV}}}primary_category") is not None else category), "categories": [node.attrib.get("term") for node in entry.findall(f"{{{ATOM}}}category")],
-        "initial_submission_date": text(entry, "published"), "latest_version_date": text(entry, "updated"), "doi": text(entry, "doi") or None, "journal_reference": text(entry, "journal_ref") or None,
+        "initial_submission_date": text(entry, "published"), "latest_version_date": text(entry, "updated"), "doi": (text(entry, "doi", ARXIV) or text(entry, "doi", ATOM)) or None, "journal_reference": (text(entry, "journal_ref", ARXIV) or text(entry, "journal_ref", ATOM)) or None,
         "abstract_url": f"https://arxiv.org/abs/{raw_id}", "pdf_url": links.get("pdf", f"https://arxiv.org/pdf/{raw_id}"), "collected_at": datetime.now(UTC).isoformat(),
         "relevance": "PENDING_REVIEW", "document_type": "RESEARCH", "editorial_verification": "PENDING_REVIEW", "classification_confidence": "LOW", "ai_summary": None,
     }
